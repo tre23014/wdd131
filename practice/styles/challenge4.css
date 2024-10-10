@@ -1,0 +1,26 @@
+img{
+    width: 10%;
+}
+body{
+    background-color: skyblue;
+}
+
+.white-text{
+    color: white;
+}
+
+.centered{
+    text-align: center;
+}
+ol{
+    text-align: left;
+}
+
+.big-text{
+    font-size: 1.5em;
+}
+
+main{
+    max-width: 600px;
+    margin: 0 auto;
+}

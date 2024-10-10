@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    font-size: 24px;
+}
+
+h1{
+    color: white;
+}
+
+main{
+    background-color: darkblue;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#green{
+    background-color: lightgreen;
+}
+
+p{
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer p{
+    color: darkblue;
+}
+
+a:hover{
+    background-color: darkblue;
+    color: white;
+}
