@@ -1,0 +1,37 @@
+*{
+    text-align: center;
+}
+
+h1{
+    width: 100%;
+}
+
+.desk{
+    width: 200px;
+    text-align: left;
+    margin: 100px;
+    border: 10px solid #3e3e3e;
+    border-radius: 260px;
+}
+
+.graphic{
+    width: 200px;
+    text-align: center;
+    margin: 100px;
+    border: 10px solid #3e3e3e;
+    border-radius: 260px;
+}
+
+.person{
+    width: 200px;
+    text-align: right;
+    margin: 100px;
+    border: 10px solid #3e3e3e;
+    border-radius: 260px;
+}
+
+body{
+    background-color: gray;
+}
+
+
