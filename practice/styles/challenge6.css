@@ -1,0 +1,16 @@
+body{
+    background-color: grey;
+}
+
+h2{
+    color: darkred;
+    text-align: left;
+}
+
+img{
+    background-color: white;
+}
+
+h1{
+    z-index: 1;
+}
