@@ -5,8 +5,8 @@
 }
 
 #logo_link{
+    width: 0px;
     padding-top: 5px; 
-    justify-self: center;
     align-self: center;
 }
 
