@@ -1,0 +1,47 @@
+
+.blog-post{
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    color: steelblue;
+    text-align: center;
+}
+
+h1{
+    size: 25px;
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+    color: darkgrey;
+}
+
+.stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    background-color: steelblue;
+    column-gap: 2px;
+    border-left: 5px, grey, solid;
+
+}
+
+.one{
+    color: white;
+}
+
+.two{
+    color: white;
+}
+
+.three{
+    color: white;
+}
