@@ -5,9 +5,13 @@
 }
 
 #logo_link{
-    width: 0px;
+    width: 80px;
     padding-top: 5px; 
     align-self: center;
+}
+
+.logo{
+    width: 80px;
 }
 
 #content{
@@ -136,6 +140,11 @@ footer .social img{
     padding-top: 10px;
 }
 
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
 footer p{
     font-size: 1.2em;
 }
@@ -169,6 +178,7 @@ footer p a:hover{
     border: 10px solid #f6f5ae;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
 }
 
 main section img{
