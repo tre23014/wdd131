@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Component Activity</title>
+    <link rel="stylesheet" href="styles/week12.css">
+</head>
+
+<body>
+    <h1>What is Lochsa Lodge?</h1>
+    <button class="accordion">History and Location</button>
+    <div class="panel">
+        <p>Nestled deep in the Clearwater National Forest of Idaho, Lochsa Lodge boasts a rich history that dates back
+            to the early 1920s. Originally established as a stopping point for travelers along the historic Lolo Trail,
+            the lodge has evolved over the decades into a beloved destination for outdoor enthusiasts. Surrounded by
+            majestic mountains and lush forests, the lodge offers a tranquil escape from the hustle and bustle of
+            everyday life. Its remote location provides visitors with breathtaking views and a serene environment
+            perfect for relaxation and adventure alike.</p>
+    </div>
+
+    <button class="accordion">Accommodations and Amenities</button>
+    <div class="panel">
+        <p>Lochsa Lodge offers a range of accommodations to suit every traveler's needs, from rustic cabins that echo
+            the charm of days gone by to more modern lodges equipped with all the comforts of home. Guests can enjoy
+            amenities such as a cozy wood-burning stove, comfortable furnishings, and stunning views of the surrounding
+            wilderness. The lodge also features a welcoming main lodge area with a restaurant known for its hearty
+            meals, including locally sourced ingredients and traditional American fare. Whether you're unwinding by the
+            fire or savoring a delicious meal, the lodge provides a warm and inviting atmosphere.</p>
+    </div>
+
+    <button class="accordion">Activities and Adventures</button>
+    <div class="panel">
+        <p>A stay at Lochsa Lodge opens the door to a variety of outdoor activities no matter the season. During the
+            warmer months, guests can embark on exhilarating hikes, kayak along the scenic Lochsa River, or try their
+            hand at fly fishing in the pristine waters. Winter transforms the area into a snowy wonderland, perfect for
+            cross-country skiing and snowshoeing. For those seeking a bit more thrill, white-water rafting on the Lochsa
+            River is a must-try adventure. With its rich array of activities, Lochsa Lodge serves as a gateway to
+            exploring the natural beauty and excitement of Idaho's wilderness year-round.</p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+
+</html>

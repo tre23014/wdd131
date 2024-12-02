@@ -1,0 +1,39 @@
+body{
+    margin: 0 auto;
+    width: 1000;
+    padding: 10px;
+}
+
+section{
+    width: 400px;
+}
+
+.one{
+    border: 2px solid black;
+}
+
+.two, .four{
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.three{
+    border: 2px solid black;
+    margin-left: auto;
+}
+
+p:nth-last-of-type(2){
+    text-align: center;
+}
+
+p:nth-last-of-type(1){
+    text-align: right;
+}
+
+.four p:nth-last-of-type(3){
+    text-align: right;
+}
+
+.four p:nth-last-of-type(1){
+    text-align: left;
+}
