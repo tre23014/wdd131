@@ -171,3 +171,22 @@ nav{
 .home-grid{
     padding: 25px;
 }
+
+.banda{
+    width: 200px;
+    float: left;
+    padding: 50px;
+}
+
+.about_me{
+    padding: 50px;
+    text-size-adjust: 14px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.transformation{
+    width: 200px;
+    float: right;
+    padding: 50px;
+}
