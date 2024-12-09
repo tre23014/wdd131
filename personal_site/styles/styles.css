@@ -67,6 +67,8 @@ p{
 
 h2{
     margin: 0;
+    text-size-adjust: 12px;
+
 }
 
 header{
@@ -172,6 +174,8 @@ nav{
     padding: 25px;
 }
 
+/*About Gina */
+
 .banda{
     width: 200px;
     float: left;
@@ -189,4 +193,29 @@ nav{
     width: 200px;
     float: right;
     padding: 50px;
+}
+
+/* Optavia */
+
+.optaviasite{
+    margin: 50px;
+}
+
+.optavia_logo{
+    float: left;
+    width: 200px;
+    padding: 50px;
+}
+
+.topic{
+    text-align: center;
+    font-family: "Lato", "Sour Gummy", sans-serif;
+    color: #3590f3;
+    font-weight: 400;
+    margin: 50px;
+}
+
+.points{
+    padding-left: 50px;
+    padding-right: 50px;
 }
