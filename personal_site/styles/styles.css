@@ -19,6 +19,10 @@
     size: 200px;
 }
 
+.quote{
+    width: 200px;
+}
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
