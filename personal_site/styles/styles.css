@@ -16,7 +16,7 @@
 }
 
 .home-title{
-    size: 200px;
+    font-size: 200px;
 }
 
 .quote{
@@ -71,7 +71,7 @@ p{
 
 h2{
     margin: 0;
-    text-size-adjust: 12px;
+    font-size: 12px;
 
 }
 
@@ -188,7 +188,7 @@ nav{
 
 .about_me{
     padding: 50px;
-    text-size-adjust: 14px;
+    font-size: 14px;
     padding-top: 0px;
     padding-bottom: 0px;
 }
