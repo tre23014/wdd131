@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+body {
+    font-family: "Mooli", "sans-serif";
+    font-size: 1.2em;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+header,
+footer {
+    background-color: rgb(98, 19, 182);
+    color: white;
+}
+
+header {
+    color: white;
+}
+
+button {
+    background-color: rgb(98, 19, 182);
+    color: white;
+    font-family: "Mooli," sans-serif;
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr, 1fr;
+    }
+
+    button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr, 1fr, 1fr;
+    }
+
+    button {
+        display: none;
+    }
+}
