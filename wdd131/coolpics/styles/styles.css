@@ -5,15 +5,29 @@ body {
     font-size: 1.2em;
 }
 
+h1,
+h2,
+nav {
+    text-align: center;
+}
+
 img {
     max-width: 100%;
     object-fit: cover;
+}
+
+nav a {
+    color: white;
 }
 
 header,
 footer {
     background-color: rgb(98, 19, 182);
     color: white;
+
+    a {
+        display: block;
+    }
 }
 
 header {
@@ -21,27 +35,53 @@ header {
 }
 
 button {
+    text-align: center;
     background-color: rgb(98, 19, 182);
     color: white;
     font-family: "Mooli," sans-serif;
+    all: unset;
+}
+
+.gallery img {
+    max-width: 100%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 2px 2px 2px black;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
 @media screen and (min-width: 700px) {
     .gallery {
-        grid-template-columns: 1fr, 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
-    button {
+    header {
+        a {
+            display: inline;
+        }
+    }
+
+    nav {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 1000px) {
     .gallery {
-        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     button {
         display: none;
+    }
+
+    nav {
+        display: contents;
     }
 }
