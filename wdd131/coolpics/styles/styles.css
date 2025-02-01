@@ -34,7 +34,7 @@ header {
     color: white;
 }
 
-button {
+.button {
     text-align: center;
     background-color: rgb(98, 19, 182);
     color: white;
@@ -52,7 +52,33 @@ button {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
+}
 
+.menu.hide {
+    display: none;
+}
+
+.viewer {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.close-viewer {
+    color: white;
+    grid-row: 1/2;
+    columns: 2/2;
+}
+
+.viewer,
+img {
+    max-height: 100%;
+    grid-row: 2/2;
+    columns: 1/2;
 }
 
 @media screen and (min-width: 700px) {
