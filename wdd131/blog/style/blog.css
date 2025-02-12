@@ -7,6 +7,19 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+nav {
+    direction: none;
+    border-top: #EFC69B;
+    border-bottom: #EFC69B;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: auto;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 .one {
     grid-column: 1/2;
     margin-left: 10px;
@@ -34,22 +47,32 @@ div {
 }
 
 h1 {
+    font-size: 25px;
     text-align: center;
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 80% 20%;
+    padding: 1rem, 2rem;
 }
 
 
 article {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 20% 80%;
+    padding: 1rem, 2rem;
 }
 
 .info {
-    grid-column: 1/2;
+    min-width: 380px;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.book-image {
+    display: block;
+    justify-self: center;
 }
 
 .book {
@@ -57,5 +80,6 @@ article {
 }
 
 .filters {
-    grid-column: 3/3;
+    min-width: 150px;
+    border: 1px solid #EFC69B;
 }
