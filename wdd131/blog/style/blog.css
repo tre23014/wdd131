@@ -9,8 +9,8 @@
 
 nav {
     direction: none;
-    border-top: #EFC69B;
-    border-bottom: #EFC69B;
+    border-top: 1px solid #EFC69B;
+    border-bottom: 1px solid #EFC69B;
     max-width: 100%;
     margin: 0 auto;
     padding: auto;
@@ -38,6 +38,8 @@ body {
 .title {
     color: #AF1B3F;
     font-family: Helvetica, Arial, sans-serif;
+    justify-self: center;
+    padding: 5px;
 }
 
 h1,
@@ -47,7 +49,7 @@ div {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -68,6 +70,8 @@ article {
     min-width: 380px;
     display: grid;
     grid-template-columns: 20% 1fr;
+    padding: 5px;
+    border-right: 1px solid #EFC69B;
 }
 
 .book-image {
@@ -76,10 +80,17 @@ article {
 }
 
 .book {
-    grid-column: 2/3;
+    justify-self: center;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 .filters {
     min-width: 150px;
     border: 1px solid #EFC69B;
+}
+
+p {
+    justify-self: center;
+    padding: 5px;
 }
