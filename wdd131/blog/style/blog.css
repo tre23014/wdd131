@@ -1,0 +1,61 @@
+.main-nav {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    justify-content: end;
+    justify-items: end;
+    color: #AF1B3F;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.one {
+    grid-column: 1/2;
+    margin-left: 10px;
+}
+
+.two {
+    grid-column: 2/3;
+    margin-left: 10px;
+}
+
+.three {
+    grid-column: 3/3;
+    margin-left: 10px;
+}
+
+.title {
+    color: #AF1B3F;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1,
+div {
+    color: #473144;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+}
+
+
+article {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+}
+
+.info {
+    grid-column: 1/2;
+}
+
+.book {
+    grid-column: 2/3;
+}
+
+.filters {
+    grid-column: 3/3;
+}
