@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tori Tremelling">
+    <meta name="description" content="Beginning website for a recipe book">
+    <title>Recipe Book - Part 1</title>
+    <link rel="stylesheet" href="recipes.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <image class="site-logo" src="images/recipe-book.png" alt="Recipe Book Logo"></image>
+        <h1>RecipeBook</h1>
+    </header>
+    <main>
+        <form action="#">
+            <div class="search-row">
+                <input type="search" placeholder="Find a recipe" />
+                <button type="button"><img src="images/search.svg" alt="Search"></img></button>
+            </div>
+        </form>
+        <hr>
+        <article class="recipe">
+            <img class="recipe-image" src="images/apple-crisp.jpg" alt="Apple Crisp with ice cream in a bowl" />
+            <div class="tag-row">
+                <span class="tag">dessert</span>
+            </div>
+
+            <h2>Apple Crisp</h2>
+            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+        </article>
+    </main>
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a class="social-logo" href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a class="social-logo" href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a class="social-logo" href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik -
+            Flaticon</a>
+    </footer>
+</body>
+
+</html>
