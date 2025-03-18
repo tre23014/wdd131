@@ -183,3 +183,13 @@ button:hover {
         width: 100%;
     }
 }
+
+@media (min-width: 1023px) {
+    .participants {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #add {
+        grid-column: span 2;
+    }
+}
