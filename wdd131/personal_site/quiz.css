@@ -343,6 +343,10 @@ footer a {
     color: black;
 }
 
+img {
+    width: 100px;
+}
+
 @media (max-width: 600px) {
     .results-container {
         max-width: 100%;
@@ -375,5 +379,9 @@ footer a {
     .cta-button {
         padding: 12px 24px;
         font-size: 1em;
+    }
+
+    img {
+        width: 70px;
     }
 }
