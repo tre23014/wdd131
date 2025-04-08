@@ -152,7 +152,6 @@ footer a {
 
     .highlights {
         grid-template-columns: 1fr;
-        /* Stack highlights vertically */
         padding: 20px;
     }
 
@@ -246,45 +245,34 @@ footer a {
 @media (max-width: 600px) {
     .quiz-container {
         max-width: 100%;
-        /* Full width on mobile */
-        padding: 20px;
-        /* Less padding */
+        padding: 40px 20px;
         margin-top: 40px;
-        /* Slightly less margin */
     }
 
     .quiz-container h1 {
-        font-size: 1.8em;
-        /* Smaller font size for headings */
+        font-size: 2em;
     }
 
     .quiz-instructions {
-        font-size: 0.9em;
-        /* Slightly smaller text */
+        font-size: 1.5em;
     }
 
     .question-box h2 {
-        font-size: 1.1em;
-        /* Slightly smaller question titles */
+        font-size: 1.5em;
     }
 
     .answer-options button {
-        padding: 10px;
-        /* Slightly smaller padding */
-        font-size: 0.9em;
-        /* Smaller button text */
+        padding: 12px;
+        font-size: 1em;
     }
 
     .quiz-button {
-        padding: 8px 15px;
-        /* Slightly smaller padding */
-        font-size: 0.9em;
-        /* Smaller button text */
+        padding: 10px 20px;
+        font-size: 1em;
     }
 
     .quiz-progress {
-        font-size: 0.8em;
-        /* Smaller font size for progress */
+        font-size: 1.5em;
     }
 }
 
@@ -337,7 +325,7 @@ footer a {
     font-size: 2em;
     font-family: "Sour Gummy", cursive;
     margin-bottom: 10px;
-    color: #114b5f;
+    color: black;
 }
 
 .cta-button {
@@ -358,46 +346,34 @@ footer a {
 @media (max-width: 600px) {
     .results-container {
         max-width: 100%;
-        /* Full width on mobile */
-        padding: 20px;
-        /* Less padding for mobile */
+        padding: 40px 20px;
         margin: 40px auto;
-        /* Adjusted top margin for better spacing */
     }
 
     .results-container h1 {
-        font-size: 1.8em;
-        /* Smaller font size for headings */
+        font-size: 2em;
     }
 
     .results-summary {
-        font-size: 1em;
-        /* Slightly smaller text */
+        font-size: 1.1em;
     }
 
     .results-breakdown {
         display: block;
-        /* Stack the result boxes vertically on small screens */
-        gap: 15px;
-        /* Reduced gap between items */
+        gap: 20px;
     }
 
     .result-box {
-        padding: 15px;
-        /* Less padding for smaller screens */
-        font-size: 0.9em;
-        /* Slightly smaller font size */
+        padding: 20px;
+        font-size: 1em;
     }
 
     .result-box h2 {
-        font-size: 1.1em;
-        /* Slightly smaller headings */
+        font-size: 2em;
     }
 
     .cta-button {
-        padding: 10px 20px;
-        /* Reduced button size */
-        font-size: 0.9em;
-        /* Slightly smaller font size */
+        padding: 12px 24px;
+        font-size: 1em;
     }
 }
