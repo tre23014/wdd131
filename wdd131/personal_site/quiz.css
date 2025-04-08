@@ -44,6 +44,7 @@ nav a {
     display: block;
     padding: 15px 20px;
     font-size: 1.2em;
+    color: black;
 }
 
 nav a:hover {
@@ -179,24 +180,26 @@ footer a {
 }
 
 .quiz-container h1 {
+    font-size: 2em;
     font-family: "Sour Gummy", cursive;
     color: #fe9920;
     margin-bottom: 10px;
 }
 
 .quiz-instructions {
-    font-size: 1em;
+    font-size: 1.5em;
     margin-bottom: 30px;
     color: #fe9920;
 }
 
 .question-box h2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-bottom: 20px;
     color: #fe9920;
 }
 
 .answer-options {
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -236,7 +239,7 @@ footer a {
 
 .quiz-progress {
     margin-top: 20px;
-    font-size: 0.9em;
+    font-size: 1.5em;
     color: #fe9920;
 }
 
@@ -298,9 +301,14 @@ footer a {
 }
 
 .results-container h1 {
+    font-size: 2em;
     font-family: "Sour Gummy", cursive;
     margin-bottom: 10px;
     color: #fe9920;
+}
+
+.results-container p {
+    font-size: 1.5em;
 }
 
 .results-summary {
@@ -326,6 +334,7 @@ footer a {
 }
 
 .result-box h2 {
+    font-size: 2em;
     font-family: "Sour Gummy", cursive;
     margin-bottom: 10px;
     color: #114b5f;
