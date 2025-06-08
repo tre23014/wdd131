@@ -1,4 +1,100 @@
+/* Default (Light Mode) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+
+/* HERO SECTION (light text for dark background) */
+body.dark-mode .hero-text {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .org-name {
+    color: #FF91AF;
+}
+
+/* NAVIGATION LINKS */
+body.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+/* OPTIONAL: Hover styles to make them look clickable */
+body.dark-mode .nav-links a:hover {
+    color: #FF91AF;
+    text-decoration: underline;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+header,
+nav,
+footer,
+.accordion {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .accordion {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+body.dark-mode .panel {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+body.dark-mode .meals-list li {
+    color: #1e1e1e;
+}
+
 /* Home */
+.accordion-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.accordion {
+    background-color: #004b8d;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.accordion:hover,
+.accordion.active {
+    background-color: #0066cc;
+}
+
+.panel {
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    transition: max-height 0.3s ease-out;
+    border-radius: 0 0 5px 5px;
+}
 
 /* Reset some basic elements */
 * {
