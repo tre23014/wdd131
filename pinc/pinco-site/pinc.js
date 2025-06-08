@@ -47,3 +47,12 @@ darkModeToggle.addEventListener('click', () => {
         darkModeToggle.textContent = '🌙 Dark Mode';
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburgerToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+});

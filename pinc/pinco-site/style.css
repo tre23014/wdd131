@@ -17,6 +17,10 @@ body.dark-mode .org-name {
     color: #FF91AF;
 }
 
+body.dark-mode p.donate-cta {
+    color: #1e1e1e;
+}
+
 /* NAVIGATION LINKS */
 body.dark-mode .nav-links a {
     color: #ffffff;
@@ -58,6 +62,108 @@ body.dark-mode .panel {
 
 body.dark-mode .meals-list li {
     color: #1e1e1e;
+}
+
+/* Hide hamburger by default, show only on small screens */
+.hamburger {
+    display: none;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    #darkModeToggle {
+        order: 2;
+        align-self: flex-end;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Small screens (phones/tablets) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #FF91AF;
+        /* Match your theme */
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none !important;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 100%;
+        /* puts it right under the nav bar */
+        right: 0;
+        background-color: #fff;
+        /* or #1e1e1e for dark mode */
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .nav-links.open {
+        display: flex !important;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .nav-links a {
+        color: #333;
+        /* or white in dark mode */
+        font-size: 1.2rem;
+    }
+
+    body.dark-mode .nav-links {
+        background-color: #1e1e1e;
+    }
+
+    body.dark-mode .nav-links a {
+        color: #fff;
+    }
+
+    /* Slide-down animation for mobile menu */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 0 1rem;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease-out;
+    }
+
+    /* When open, show the menu */
+    .nav-links.open {
+        max-height: 500px;
+        /* Set a value large enough to hold all your links */
+        padding: 1rem;
+    }
 }
 
 /* Home */
@@ -120,11 +226,12 @@ body {
 /* Navigation */
 .navbar {
     background-color: #fff;
+    color: white;
     border-bottom: 1px solid #ccc;
     padding: 1rem 0;
-    position: sticky;
+    position: relative;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
 }
 
 .navbar .logo {
