@@ -1,0 +1,225 @@
+/* Home */
+
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Containers */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FF91AF;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #FF91AF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff7297;
+}
+
+.hero-text {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+    background-color: #fffafc;
+}
+
+.mission-statement {
+    color: #FF91AF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.org-name {
+    font-size: 2.75rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Sections */
+section {
+    padding: 3rem 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #FF91AF;
+}
+
+/* Intro Section */
+.intro-section p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Meals Section */
+.meals-list {
+    list-style: none;
+    padding-left: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.meals-list li {
+    background-color: #ffeef3;
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+/* Donate Section */
+.donate-cta {
+    background-color: #FFFC31;
+    text-align: center;
+}
+
+.donate-cta .btn.donate {
+    background-color: #FF91AF;
+    color: white;
+}
+
+.donate-cta .btn.donate:hover {
+    background-color: #ff7297;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+/* About */
+.about-content {
+    padding: 3rem 1rem;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.about-content h2 {
+    color: #FF91AF;
+    margin-top: 2rem;
+    font-size: 1.75rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    max-width: 800px;
+    line-height: 1.7;
+}
+
+.nav-links a.active {
+    color: #FF91AF;
+    font-weight: bold;
+    border-bottom: 2px solid #FF91AF;
+}
+
+
+/* Contact */
